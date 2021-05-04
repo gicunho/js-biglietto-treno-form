@@ -15,10 +15,12 @@
 </head>
 <body class="bg_pink">
     <h1 class="text-center">BoolTrain</h1>
+
+    <!-- Sezione con input e pulsanti per generazione biglietto -->
     <div class="container text-center">
-        <h2 class="text-uppercase text-white">calcola il prezzo del tuo biglietto</h2>
-        <div class="bg-white">
-            <div id="datiBiglietto" class="tx_pink d-flex justify-content-around">
+        <h2 class="text-uppercase text-white mt-5">calcola il prezzo del tuo biglietto</h2>
+        <div class="bg-white p-3 rounded">
+            <div id="datiBiglietto" class="tx_pink d-flex justify-content-around mb-4">
                 <div>
                     <label for="nome_cognome">Nome Cognome</label><br>
                     <input type="text" name="nome_cognome" id="nome_cognome">
@@ -40,11 +42,12 @@
                 <button onclick="resetBiglietto()">Annulla</button>
         </div>
         
-        <h2 class="text-uppercase text-white">il tuo biglietto</h2>
-        <div class="bg-white">
+        <!-- Sezione del biglietto visibile solo dopo la generazione del biglietto -->
+        <h2 class="text-uppercase text-white mt-5">il tuo biglietto</h2>
+        <div id="biglietto_generato" class="bg-white p-3">
             <h5 class="text-uppercase text-left">dettaglio passeggeri</h5>
             <hr>
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-between">
                 <div class="bg-secondary">
                     <p class="font-weight-bold text-uppercase"> Nome passeggero</p>
                     <span id="nome_passeggero"></span>

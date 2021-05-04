@@ -6,3 +6,20 @@
 .tx_pink {
     color: #b91450;
 }
+
+input, select{
+    border-radius: 5px;
+    border: 1px solid #b91450;
+}
+
+button{
+    border-radius: 10px;
+    border: 1px solid #b91450;
+    background-color: #cccccc;
+    color: #b91450;
+    font-weight: bold;
+}
+
+#biglietto_generato{
+    display: none;
+}
