@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Personal Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>BoolTalo</title>
+</head>
+<body class="bg_pink">
+    <h1 class="text-center">BoolTrain</h1>
+    <div class="container text-center">
+        <h2 class="text-uppercase text-white">calcola il prezzo del tuo biglietto</h2>
+        <div class="bg-white">
+            <div id="datiBiglietto" class="tx_pink d-flex justify-content-around">
+                <div>
+                    <label for="nome_cognome">Nome Cognome</label><br>
+                    <input type="text" name="nome_cognome" id="nome_cognome">
+                </div>
+                <div>
+                    <label for="percorso_km">Km da percorrere</label><br>
+                    <input type="number" name="percorso_km" id="percorso_km">
+                </div>
+                <div>
+                    <label for="fascia_eta">Fascia d'età</label><br>
+                    <select name="fascia_eta" id="fascia_eta">
+                        <option>Adulto</option>
+                        <option>Minorenne</option>
+                        <option>Over 65</option>
+                    </select>
+                </div>
+            </div>
+                <button onclick="generaBiglietto()">Genera</button>
+                <button onclick="resetBiglietto()">Annulla</button>
+        </div>
+        
+        <h2 class="text-uppercase text-white">il tuo biglietto</h2>
+        <div class="bg-white">
+            <h5 class="text-uppercase text-left">dettaglio passeggeri</h5>
+            <hr>
+            <div class="d-flex justify-content-around">
+                <div class="bg-secondary">
+                    <p class="font-weight-bold text-uppercase"> Nome passeggero</p>
+                    <span id="nome_passeggero"></span>
+                </div>
+                <div>
+                    <p class="font-weight-bold text-uppercase"> Offerta</p>
+                    <span id="sconto_passeggero"></span>
+                </div>
+                <div>
+                    <p class="font-weight-bold text-uppercase"> Carrozza</p>
+                    <span id="carrozza"></span>
+                </div>
+                <div>
+                    <p class="font-weight-bold text-uppercase"> Codice CP</p>
+                    <span id="codice_cp"></span>
+                </div>
+                <div>
+                    <p class="font-weight-bold text-uppercase"> Costo biglietto</p>
+                    <span id="costo_biglietto"></span>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>
