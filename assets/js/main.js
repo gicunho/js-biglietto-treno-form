@@ -43,7 +43,7 @@ function generaBiglietto() {
     } else if (fasciaEta == 'Adulto') {
     prezzo = prezzoInt
     }
-    document.getElementById('costo_biglietto').innerHTML = prezzo.toFixed(2);
+    document.getElementById('costo_biglietto').innerHTML = prezzo.toFixed(2) + ' €';
 
     var carrozza = generaNumeroCasuale(1, 11);
     document.getElementById('carrozza').innerHTML = carrozza;
@@ -53,6 +53,12 @@ function generaBiglietto() {
 }
 
 function resetBiglietto() {
-    document.getElementById("datiBiglietto").reset();
-    
+    var nomePasseggero = document.getElementById('nome_cognome').value = '';
+    var distance = document.getElementById('percorso_km').value = '';
+    var fasciaEta = document.getElementById('fascia_eta').value = '';
+    document.getElementById('nome_passeggero').innerHTML = '';
+    document.getElementById('sconto_passeggero').innerHTML = '';
+    document.getElementById('costo_biglietto').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
+    document.getElementById('codice_cp').innerHTML = '';
 }
